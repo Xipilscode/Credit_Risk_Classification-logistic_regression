@@ -47,10 +47,6 @@ jupyter lab
 ### Note:
 If you are running on a Mac with M1 or M2 chip, there may be issues with installing TensorFlow. In this case, please refer to this link for troubleshooting: https://www.mrdbourke.com/setup-apple-m1-pro-and-m1-max-for-machine-learning-and-data-science/
 
-# Credit Risk Classification
-
-Credit risk poses a classification problem that’s inherently imbalanced. This is because healthy loans easily outnumber risky loans. In this Challenge, you’ll use various techniques to train and evaluate models with imbalanced classes. You’ll use a dataset of historical lending activity from a peer-to-peer lending services company to build a model that can identify the creditworthiness of borrowers.
-
 ## Instructions:
 
 This challenge consists of the following subsections:
