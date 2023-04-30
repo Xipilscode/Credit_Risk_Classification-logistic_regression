@@ -1,0 +1,8 @@
+numpy==1.23.2
+pandas==2.0.1
+matplotlib==3.7.1
+pathlib==3.6.15
+itertools==0.8.0
+scikit-learn==1.2.2
+imblearn==0.7.0
+warnings==0.2
