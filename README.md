@@ -1,6 +1,15 @@
 ## Credit Risk Classification with Logistic Regression
 
-This project aims to classify credit risk using a logistic regression model on an imbalanced dataset. The dataset, which consists of historical lending activity, will be split into training and testing sets and evaluated with both the original and resampled data using the `RandomOverSampler` module from the imbalanced-learn library. The performance of the model will be measured using balanced accuracy score, confusion matrix, and classification report. The results will be summarized in a credit risk analysis report included in the GitHub repository's `report.md` file.
+This project aims to classify credit risk using a logistic regression model on an imbalanced dataset. The dataset, which consists of historical lending activity, will be split into training and testing sets and evaluated with both the original and resampled data using the `RandomOverSampler` module from the `imblearn` library. The performance of the model is measured using the balanced accuracy score, confusion matrix, and classification report. The results and plots are summarized in a credit risk analysis report, which is included in the GitHub repository's `report.md` file.
+
+* Example of visualized performance metrics:
+<a href="images/ovs_model_conf_matrix.png">
+  <img src="images/ovs_model_conf_matrix.png" width="49%" alt="Confusion Matrix for Regular Logistic Regression Model">
+</a>
+<a href="images/ovs_model_report.png">
+  <img src="images/ovs_model_report.png" width="49%" alt="Classification report for resampled model">
+</a>
+
 
 ## Technologies
 
@@ -42,14 +51,14 @@ pip install -r requirements.txt
 ```
 jupyter lab
 ```
-6. Open the project file: Once Jupyter Lab is open, navigate to the location where you have cloned this project and open the **Credit_Risk_Classification.ipynb** file .
+6. Open the project file: Once Jupyter Lab is open, navigate to the location where you have cloned this project and open the **credit_risk_resampling.ipynb** file .
 
 ### Note:
 If you are running on a Mac with M1 or M2 chip, there may be issues with installing TensorFlow. In this case, please refer to this link for troubleshooting: https://www.mrdbourke.com/setup-apple-m1-pro-and-m1-max-for-machine-learning-and-data-science/
 
 ## Instructions:
 
-This challenge consists of the following subsections:
+This project consists of the following subsections:
 
 * Split the Data into Training and Testing Sets
 
@@ -73,7 +82,7 @@ Open the starter code notebook and then use it to complete the following steps.
 
 ### Create a Logistic Regression Model with the Original Data
 
-Employ your knowledge of logistic regression to complete the following steps:
+To create the logistic regression model complete the following steps:
 
 1. Fit a logistic regression model by using the training data (`X_train` and `y_train`).
 
@@ -109,18 +118,6 @@ To do so, complete the following steps:
     
 4. Answer the following question: How well does the logistic regression model, fit with oversampled data, predict both the `0` (healthy loan) and `1` (high-risk loan) labels?
 
-### Write a Credit Risk Analysis Report
-
-For this section, you’ll write a brief report that includes a summary and an analysis of the performance of both machine learning models that you used in this challenge. You should write this report as the `README.md` file included in your GitHub repository.
-
-Structure your report by using the report template that `Starter_Code.zip` includes, and make sure that it contains the following:
-
-1. An overview of the analysis: Explain the purpose of this analysis.
-
-
-2. The results: Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of both machine learning models.
-
-3. A summary: Summarize the results from the machine learning models. Compare the two versions of the dataset predictions. Include your recommendation for the model to use, if any, on the original vs. the resampled data. If you don’t recommend either model, justify your reasoning.
 
 ### Contributors
 Alexander Likhachev
